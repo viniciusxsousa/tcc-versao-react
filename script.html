@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Script</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div>
+
+        </div>
+
+        <script>
+
+            var $div = document.querySelector('div');
+
+            $div.innerHTML = '[';
+
+            for(var i = 30001; i <= 50000; i++){
+                var str = '{' +
+                            '"description": "tarefa '+ i +'",' +
+                            '"__v": 0' +
+                          '},'
+                $div.innerHTML += str;
+            }
+
+            $div.innerHTML += ']';
+
+
+        </script>
+    </body>
+</html>
